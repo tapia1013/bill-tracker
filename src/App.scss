@@ -1,0 +1,190 @@
+#BillsApp {
+  height: 100vh;
+  background: rgb(88,195,149);
+  background: linear-gradient(126deg, rgba(88,195,149,1) 0%, rgba(0,160,190,1) 100%);
+  position: relative;
+  overflow-x: hidden;
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+    h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: white;
+    }
+  }
+  
+  #AllBills {
+    .container {
+      max-width: 100%;
+      padding: 0 350px
+    }
+    
+    .total-bills {
+      color: white;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 20px 0;
+      align-items: center;
+      
+      .text {
+        font-size: 2.5rem;
+      }
+      
+      .number {
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+      }
+    }
+    
+    .bills-list {
+      background: white;
+      border-radius: 10px;
+      
+      .bill {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        border-bottom: 1px solid #e8e8e8;
+        padding:20px 20px;
+        &:last-child {
+          border: none;
+        }
+        
+        .company {
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          
+          .logo {
+            img {
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+            }
+          }
+          
+          .title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-left: 20px;
+            color: #423f3f;
+            text-transform: capitalize;
+          }
+        }
+        
+        .price {
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          color: #797878;
+        }
+      }
+    }
+  }
+  
+  
+  
+  #floatingMenu {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 97.9%;
+    
+    
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #c0c0c0;
+      transition: all .4s ease-in-out;
+    }
+    
+    .text {
+      font-size: .8rem;
+      color: #c0c0c0;
+      transition: all .4s ease-in-out;
+      
+      &:hover {
+        background: rgb(88,195,149);
+        background: linear-gradient(126deg, rgba(88,195,149,1) 0%, rgba(0,160,190,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+    }
+    
+    .link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all .4s ease-in-out;
+      cursor: pointer;
+      
+      &:hover {
+        background: rgb(88,195,149);
+        background: linear-gradient(126deg, rgba(88,195,149,1) 0%, rgba(0,160,190,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        
+        &:last-child {
+          .far:before, .fas:before {
+          background: white;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+      
+    &:last-child {
+      .far:before, .fas:before {
+        background: white;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: .9rem;
+      }
+    }
+  }
+    
+    .add-button {
+      background: linear-gradient(126deg, rgba(88,195,149,1) 0%, rgba(0,160,190,1) 100%);
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
